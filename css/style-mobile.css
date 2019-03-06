@@ -497,3 +497,7 @@
 		clear: both;
 	}
 }
+
+.hs-form {
+	width: 100% !important;
+}

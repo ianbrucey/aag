@@ -52,7 +52,7 @@ get_header(); ?>
 			</div>
 
 			<!-- BEGIN .five columns -->
-			<div class="five columns p-3">
+			<div class="five columns ">
 <!--				--><?php //get_sidebar(); ?>
                 <?php get_template_part('hubspot-form') ?>
 			<!-- END .five columns -->

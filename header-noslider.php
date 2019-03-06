@@ -177,8 +177,8 @@ $isBlogPage = !is_front_page() && is_home();
 <?php } ?>
 
 <!-- BEGIN .container -->
-<div class="container">
-    <div class="row">
+<div class="container" ">
+    <div class="row call-us" id="noslider-callus>
         <div class="col-12 text-center bg-white">
             <h3 ><a class="text-theme-red" href="tel:8442554477"><b>Call us at 844.255.4477</b></a> </h3>
         </div>

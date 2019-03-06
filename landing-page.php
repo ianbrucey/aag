@@ -30,7 +30,7 @@ $url = get_the_post_thumbnail_url();
 
                 </div>
                 <div class="col-md-6">
-                    <?php echo do_shortcode('[contact-form-7 id="618" title="IHSS Denial Landing Page"]') ?>
+                    <?php get_template_part('hubspot-form-landing') ?>
                 </div>
             </div>
         </div>
@@ -57,14 +57,14 @@ $url = get_the_post_thumbnail_url();
     <?php for($i = 1; $i <= 4; $i++): ?>
         <?php if(empty(get_field(sprintf("review_name_%s", $i)))) break; ?>
         <br>
-    <div class="col-3 offset-1 bg-theme-blue text-white text-center " style="height: 200px">
+    <div class="col-12 bg-theme-blue text-white text-center ">
         <h6 class=""><?php echo get_field(sprintf("review_name_%s", $i)) ?></h6>
         <h6 class=""><?php echo get_field(sprintf("location_%s", $i)) ?></h6>
     </div>
-    <div class="col-7 bg-theme-blue" style="">
-        <div class="p-3 " style="background: white">
-            <h2 class="text-theme-blue"><i>"<?php echo get_field(sprintf("large_quote_%s", $i)) ?>"</i></h2>
-            <p style="color: black !important"><i>"<?php echo get_field(sprintf("small_quote_%s", $i)) ?>"</i></p>
+    <div class="col-md-6 offset-md-3 bg-theme-blue" style="">
+        <div class="p-3 " style="background: white; border-radius: .4em !important;">
+            <h3 class="text-theme-blue"><i>"<?php echo get_field(sprintf("large_quote_%s", $i)) ?>"</i></h3>
+            <p style="color: black !important">"<?php echo get_field(sprintf("small_quote_%s", $i)) ?>"</p>
         </div>
     </div>
         <div class="col-12"><br></div>

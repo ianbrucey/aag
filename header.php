@@ -247,7 +247,7 @@ $isBlogPage = !is_front_page() && is_home();
 
 <!-- BEGIN .container -->
 <div class="container">
-    <div class="row first-call">
+    <div class="row first-call call-us">
         <div class="col-12 text-center bg-white d-md-none d-sm-block ">
             <h3 ><a class="text-theme-red" href="tel:8442554477"><b>Call us at 844.255.4477</b></a> </h3>
         </div>

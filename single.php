@@ -6,7 +6,7 @@
  * @since GivingPress Lite 1.0
  */
 
-get_header(''); ?>
+get_header(); ?>
 
 <!-- BEGIN .post class -->
 <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">

@@ -51,6 +51,16 @@
 </div><!--End cntr-->
 </div><!--End wrapper-->
 
+<?php get_template_part('hubspot-popup') ?>
+<script>
+
+    $(document).ready(function(){
+//        $(".phone").mask("(999) 999-9999");
+        setTimeout(function () {
+            $('#wp-hubspot-popup').modal('show');
+        }, 15000);
+    });
+</script>
 <?php wp_footer(); ?>
 <script src="<?php bloginfo( 'template_url' ); ?>/js/slider.min.js"></script>
 <link href="<?php bloginfo( 'template_url' ); ?>/css/slider.css" rel="stylesheet" type="text/css">
@@ -66,10 +76,5 @@
 </script>
 
 
-<script>
-    $(document).ready(function(){
-        $(".phone").mask("(999) 999-9999");
-    });
-</script>
 </body>
 </html>

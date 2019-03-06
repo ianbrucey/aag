@@ -2084,17 +2084,17 @@ input#submit, input[type='submit'] {
 	border-radius: 3px;
 	-webkit-appearance: none;
 }
-button:hover, button:focus, button:active, .button:hover,
-a:hover.button, a:focus.button, a:active.button,
-a:hover.more-link, a:focus.more-link, a:active.more-link,
-.container .reply a:hover, #searchsubmit:hover, #prevLink a:hover, #nextLink a:hover,
-input#submit:hover, input[type='submit']:hover {
-	background-color: rgba(1,103,186,1);
-	color: #ffffff;
-	text-decoration: none;
-	box-shadow: inset 0px 0px 12px rgba(0, 0, 0, .4);
-	cursor: pointer;
-}
+/*button:hover, button:focus, button:active, .button:hover,*/
+/*a:hover.button, a:focus.button, a:active.button,*/
+/*a:hover.more-link, a:focus.more-link, a:active.more-link,*/
+/*.container .reply a:hover, #searchsubmit:hover, #prevLink a:hover, #nextLink a:hover,*/
+/*input#submit:hover, input[type='submit']:hover {*/
+	/*background-color: rgba(1,103,186,1);*/
+	/*color: #ffffff;*/
+	/*text-decoration: none;*/
+	/*box-shadow: inset 0px 0px 12px rgba(0, 0, 0, .4);*/
+	/*cursor: pointer;*/
+/*}*/
 .button.large,
 a.button.large {
 	font-size: 1.4em;
@@ -2441,4 +2441,29 @@ input.wpcf7-form-control{padding: 10px;}
 .wpcf7-form-control.wpcf7-submit {
 	background: #dc3545 !important;
 	color: white;
+}
+
+.gform_button {
+	color: white !important;
+	padding: 20px !important;
+	font-size: 26px !important;
+}
+
+.hbspt-form {
+	padding: 20px !important;
+	border-radius: 0 0 .4em .4em !important;
+	width: 100% !important;
+}
+
+.hbspt-form * {
+	width: 100% !important;
+}
+
+.hubspot-form-btn {
+	border-radius: .4em .4em 0 0  !important;
+	width: 100% !important;
+}
+
+.hs-form {
+	width: 100% !important;
 }

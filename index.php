@@ -18,7 +18,7 @@ get_header(); ?>
         <button type="button" class="btn btn-warning text-theme-blue" data-toggle="modal" data-target="#exampleModalLong">
             <b>Get A Free Evaluation!</b>
         </button>
-        <h3 ><a class="text-theme-red" href="tel:8081234567"><b>Call us at 844.255.4477</b></a> </h3>
+        <h3 ><a class="text-theme-red" href="tel:8442554477"><b>Call us at 844.255.4477</b></a> </h3>
     </div>
 </div>
 
