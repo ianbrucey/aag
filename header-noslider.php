@@ -39,7 +39,7 @@ $isBlogPage = !is_front_page() && is_home();
     <!-- BEGIN #top-info -->
     <div id="top-info">
 
-        <?php if ( get_theme_mod( 'givingpress_lite_contact_email', 'info@givingpress.com' ) || get_theme_mod( 'givingpress_lite_contact_phone', '808.123.4567' ) || get_theme_mod( 'givingpress_lite_contact_address', '231 Front Street, Lahaina, HI 96761' ) ) { ?>
+        <?php if ( get_theme_mod( 'givingpress_lite_contact_email', 'info@givingpress.com' ) || get_theme_mod( 'givingpress_lite_contact_phone', '844.255.4477' ) || get_theme_mod( 'givingpress_lite_contact_address', '231 Front Street, Lahaina, HI 96761' ) ) { ?>
 
             <!-- BEGIN #contact-info -->
             <div id="contact-info">
@@ -60,8 +60,8 @@ $isBlogPage = !is_front_page() && is_home();
                                 <span class="contact-email text-right"><i class="fa fa-envelope"></i> <a class="link-email" href="mailto:<?php echo esc_html( get_theme_mod( 'givingpress_lite_contact_email', 'info@givingpress.com' ) ); ?>" target="_blank"><?php echo esc_html( get_theme_mod( 'givingpress_lite_contact_email', 'info@givingpress.com' ) ); ?></a></span>
                             <?php } ?>
 
-                            <?php if ( get_theme_mod( 'givingpress_lite_contact_phone', '808.123.4567' ) ) { ?>
-                                <span class="contact-phone text-right"><i class="fa fa-phone"></i> <?php echo esc_html( get_theme_mod( 'givingpress_lite_contact_phone', '808.123.4567' ) ); ?></span>
+                            <?php if ( get_theme_mod( 'givingpress_lite_contact_phone', '844.255.4477' ) ) { ?>
+                                <span class="contact-phone text-right"><i class="fa fa-phone"></i> <?php echo esc_html( get_theme_mod( 'givingpress_lite_contact_phone', '844.255.4477' ) ); ?></span>
                             <?php } ?>
 
                         </div>

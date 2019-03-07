@@ -363,7 +363,7 @@ msgid "Company Email Address"
 msgstr ""
 
 #: includes/customizer.php:297
-msgid "808.123.4567"
+msgid "844.255.4477"
 msgstr ""
 
 #: includes/customizer.php:301

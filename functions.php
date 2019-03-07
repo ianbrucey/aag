@@ -671,7 +671,7 @@ function givingpress_lite_body_class( $classes ) {
 	if ( 'right' == get_theme_mod( 'givingpress_lite_logo_align' ) ) {
 		$classes[] = 'givingpress-lite-logo-right'; }
 
-	if ( get_theme_mod( 'givingpress_lite_contact_email', 'info@givingpress.com' ) || get_theme_mod( 'givingpress_lite_contact_phone', '808.123.4567' ) || get_theme_mod( 'givingpress_lite_contact_address', '231 Front Street, Lahaina, HI 96761' ) ) {
+	if ( get_theme_mod( 'givingpress_lite_contact_email', 'info@givingpress.com' ) || get_theme_mod( 'givingpress_lite_contact_phone', '844.255.4477' ) || get_theme_mod( 'givingpress_lite_contact_address', '231 Front Street, Lahaina, HI 96761' ) ) {
 		$classes[] = 'givingpress-lite-info-active'; }
 
 	if ( get_theme_mod( 'background_image' ) ) {

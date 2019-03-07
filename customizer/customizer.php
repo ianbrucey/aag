@@ -294,7 +294,7 @@ function givingpress_lite_theme_customizer( $wp_customize ) {
 
 		// Contact Phone.
 		$wp_customize->add_setting( 'givingpress_lite_contact_phone', array(
-			'default' => esc_html__( '808.123.4567', 'givingpress-lite' ),
+			'default' => esc_html__( '844.255.4477', 'givingpress-lite' ),
 			'sanitize_callback' => 'givingpress_lite_sanitize_text',
 		) );
 		$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'givingpress_lite_contact_phone', array(
