@@ -56,9 +56,9 @@
 
     $(document).ready(function(){
 //        $(".phone").mask("(999) 999-9999");
-        setTimeout(function () {
-            $('#wp-hubspot-popup').modal('show');
-        }, 15000);
+//        setTimeout(function () {
+//            $('#wp-hubspot-popup').modal('show');
+//        }, 15000);
     });
 </script>
 <?php wp_footer(); ?>
