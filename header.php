@@ -25,6 +25,7 @@ $isBlogPage = !is_front_page() && is_home();
 
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php echo esc_url(bloginfo('pingback_url')); ?>">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
     <!--    <link rel="stylesheet" href="http://localhost:8888/wp-content/themes/givingpress-lite/css/main.css">-->
 
     <?php wp_head(); ?>

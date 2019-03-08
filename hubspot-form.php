@@ -6,11 +6,29 @@
             PLEASE FILL IN THE FORM BELOW
         </b>
     </button>
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+
     <script>
         hbspt.forms.create({
             portalId: "3948946",
-            formId: "a6425d5f-b1cb-4da1-8387-824fe1e3ad3a"
+            formId: "a6425d5f-b1cb-4da1-8387-824fe1e3ad3a",
+            onFormReady(){
+                var iframes = window.document.getElementsByTagName('iframe');
+                var iframeLength = iframes.length;
+                for(var i = 0; i < iframeLength; i++) {
+                    var hubspotForm = $(window.document.getElementsByTagName('iframe')[i]
+                        .contentDocument);
+
+                        hubspotForm.find('input[name=zip_code]')
+                        .attr('maxlength',5);
+
+                    hubspotForm.find('input[name=phone]')
+                        .attr('maxlength',10);
+                    hubspotForm.find('input').on('keyup', function(){
+                        // do something
+                    });
+                }
+
+            }
         });
     </script>
 </div>

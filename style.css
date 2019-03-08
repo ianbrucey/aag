@@ -2453,6 +2453,7 @@ input.wpcf7-form-control{padding: 10px;}
 	padding: 20px !important;
 	border-radius: 0 0 .4em .4em !important;
 	width: 100% !important;
+	/*position: relative;*/
 }
 
 .hbspt-form * {
@@ -2466,4 +2467,10 @@ input.wpcf7-form-control{padding: 10px;}
 
 .hs-form {
 	width: 100% !important;
+}
+
+.freezePage{
+	overflow: hidden;
+	height: 100%;
+	position: relative;
 }

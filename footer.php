@@ -54,11 +54,28 @@
 <?php get_template_part('hubspot-popup') ?>
 <script>
 
-    $(document).ready(function(){
-//        $(".phone").mask("(999) 999-9999");
-//        setTimeout(function () {
-//            $('#wp-hubspot-popup').modal('show');
-//        }, 15000);
+    window.onload = function(){
+
+        setTimeout(function () {
+            if($('#wp-hubspot-popup').length > 0){
+//                $('#wp-hubspot-popup').modal('show');
+            }
+        }, 15000);
+    };
+
+    $('.modal').on('shown.bs.modal', function (e) {
+        $('html').addClass('freezePage');
+        $('body').addClass('freezePage');
+    });
+    $('.modal').on('hidden.bs.modal', function (e) {
+        $('html').removeClass('freezePage');
+        $('body').removeClass('freezePage');
+    });
+
+    $('.eval-modal').on('click', function () {
+        {
+            $('#wp-hubspot-popup').detach();
+        }
     });
 </script>
 <?php wp_footer(); ?>
