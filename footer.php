@@ -58,7 +58,7 @@
 
         setTimeout(function () {
             if($('#wp-hubspot-popup').length > 0){
-//                $('#wp-hubspot-popup').modal('show');
+                $('#wp-hubspot-popup').modal('show');
             }
         }, 15000);
     };
