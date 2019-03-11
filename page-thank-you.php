@@ -31,9 +31,7 @@ get_header('noslider'); ?>
                 <!--            <div class="sixteen columns text-center d-md-none d-lg-none d-xl-none">-->
                 <div class="sixteen columns text-center">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-warning text-theme-blue eval-modal" data-toggle="modal" data-target="#exampleModalLong">
-                        <b>Get A Free Evaluation!</b>
-                    </button>
+
                 </div>
                 <!-- BEGIN .eleven columns -->
                 <div class="sixteen columns">

@@ -29,7 +29,7 @@ get_header(); ?>
 			</div>
 
 			<!-- BEGIN .five columns -->
-			<div class="five columns">
+			<div class="five columns" >
 
 				<?php get_sidebar( 'page' ); ?>
 

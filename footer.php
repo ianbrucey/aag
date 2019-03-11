@@ -63,14 +63,14 @@
         }, 15000);
     };
 
-    $('.modal').on('shown.bs.modal', function (e) {
-        $('html').addClass('freezePage');
-        $('body').addClass('freezePage');
-    });
-    $('.modal').on('hidden.bs.modal', function (e) {
-        $('html').removeClass('freezePage');
-        $('body').removeClass('freezePage');
-    });
+//    $('.modal').on('shown.bs.modal', function (e) {
+//        $('html').addClass('freezePage');
+//        $('body').addClass('freezePage');
+//    });
+//    $('.modal').on('hidden.bs.modal', function (e) {
+//        $('html').removeClass('freezePage');
+//        $('body').removeClass('freezePage');
+//    });
 
     $('.eval-modal').on('click', function () {
         {

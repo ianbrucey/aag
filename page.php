@@ -29,11 +29,9 @@ get_header(); ?>
 		<?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
 
 <!--            <div class="sixteen columns text-center d-md-none d-lg-none d-xl-none">-->
-                <div class="sixteen columns text-center">
+            <div class="sixteen columns text-center">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-warning text-theme-blue eval-modal" data-toggle="modal" data-target="#exampleModalLong">
-                        <b>Get A Free Evaluation!</b>
-                    </button>
+                    <?php get_template_part('eval-button') ?>
             </div>
 			<!-- BEGIN .eleven columns -->
 			<div class="eleven columns">
@@ -52,7 +50,7 @@ get_header(); ?>
 			</div>
 
 			<!-- BEGIN .five columns -->
-			<div class="five columns ">
+			<div class="five columns " id="evaluation">
 <!--				--><?php //get_sidebar(); ?>
                 <?php get_template_part('hubspot-form') ?>
 			<!-- END .five columns -->

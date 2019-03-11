@@ -284,7 +284,13 @@ border-radius:8px 8px 0px 0px;
 .fm_hdng * { font-family: 'Raleway', Arial, sans-serif !important; }
 
 
-.evl_fm{width:290px; margin:0 auto; display:block;}
+.evl_fm {
+ width: 100%;
+ margin: 0 auto;
+ display: block;
+ max-width: 100% !important;
+ padding: 15px;
+}
 
 .evl_fm form p{float:left; padding-bottom:27px;}
 
@@ -356,10 +362,10 @@ input.wpcf7-captchar{ margin-left:38px;}
 }
 
 .gfield_captcha_container {
- padding-left: 10%;
+ padding-left: 2%;
 }
 .gfield_captcha_input_container {
- padding-right: 10%;
+ padding-right: 5%;
 }
 
 .ryt_inr input[type="submit"]:hover{ background: rgba(255,204,115,1);

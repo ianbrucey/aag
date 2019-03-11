@@ -18,6 +18,10 @@ get_header(); ?>
 		<div class="content radius-full">
 
 			<?php if ( is_active_sidebar( 'sidebar-1' ) ) { ?>
+                <div class="sixteen columns text-center ">
+                    <!-- Button trigger modal -->
+                    <?php get_template_part('eval-button') ?>
+                </div>
 
 				<!-- BEGIN .eleven columns -->
 				<div class="eleven columns">
@@ -42,7 +46,7 @@ get_header(); ?>
 				</div>
 
 				<!-- BEGIN .five columns -->
-				<div class="five columns p-2">
+				<div class="five columns p-2" id="evaluation">
 
                     <?php get_template_part( 'hubspot-form' ); ?>
 
