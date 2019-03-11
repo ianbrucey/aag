@@ -24,7 +24,7 @@
                     hubspotForm.find('input[name=phone]')
                         .attr('maxlength',10);
                     hubspotForm.find('input').on('keyup', function(){
-                        // do something
+                        $('#wp-hubspot-popup').detach();
                     });
                 }
 

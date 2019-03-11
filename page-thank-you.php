@@ -84,9 +84,19 @@ get_header('noslider'); ?>
 
     <!-- END .post class -->
 </div>
+<!-- services menu fix -->
+<style>
+    ul.menu ul,
+    div.menu ul ul {
+        position: fixed !important;
+    }
+</style>
 <!-- Modal -->
 <script>
-    $('.btn-warning, .call-us').hide()
+    $('.btn-warning, .call-us').hide();
+    $(document).ready(function () {
+        $('#wp-hubspot-popup').detach();
+    });
 </script>
 
 
