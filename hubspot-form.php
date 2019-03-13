@@ -18,14 +18,25 @@
                     var hubspotForm = $(window.document.getElementsByTagName('iframe')[i]
                         .contentDocument);
 
-                        hubspotForm.find('input[name=zip_code]')
+                    hubspotForm.find('input[name=zip_code]')
                         .attr('maxlength',5);
 
                     hubspotForm.find('input[name=phone]')
-                        .attr('maxlength',10);
-                    hubspotForm.find('input').on('keyup', function(){
+                        .attr('maxlength',14);
+                    hubspotForm.find('input[name=phone]')
+                        .on('input',function () {
+                            if($(this).val().length === 10) {
+                                $(this).val(formatPhoneNumber($(this).val()));
+                            }
+                        });
+                    hubspotForm.find('input').on('input', function(){
                         $('#wp-hubspot-popup').detach();
                     });
+
+                    setTimeout(function () {
+                        $($(window.document.getElementsByTagName('iframe')[0].contentDocument).find('input')).val('');
+                        $($(window.document.getElementsByTagName('iframe')[0].contentDocument).find('input[type=submit]')).val('submit');
+                    },1000);
                 }
 
             }

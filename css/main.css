@@ -247,7 +247,7 @@ artical.cont{ width:930px; margin:0 auto; display:block; }
 .lft_con ul li{font-size: 14px;color: #666666;font-weight: normal;line-height: 18px;font-family: 'proxima_nova_rgregular';list-style: none;margin: 0px 0px 10px 30px;background: url('../images/bullet-black.png') no-repeat left;padding: 0px 0px 0px 35px; }
 
 
-.ryt_con{ width:100%; min-height: 792px;  margin-bottom: 35px; float:right; border-radius:8px;  -moz-border-radius:8px; -webkit-border-radius:8px; background: rgba(1,103,186,1);
+.ryt_con{ width:100%;  margin-bottom: 35px; float:right; border-radius:8px;  -moz-border-radius:8px; -webkit-border-radius:8px; background: rgba(1,103,186,1);
 
 background: -moz-linear-gradient(top, rgba(1,103,186,1) 0%, rgba(0,70,127,1) 100%);
 

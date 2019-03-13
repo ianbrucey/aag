@@ -6,11 +6,18 @@
                 <b>FREE</b> Consultation</h5>
         <h6>We’ll help you get the benefits your family deserves.</h6>
     </button>
+<!--    <div class="ryt_inr popup-form-container" style="display: ; -webkit-overflow-scrolling: touch !important; overflow-y: scroll !important;">-->
+<!--        <div class="clear"></div>-->
+<!--        <div class="evl_fm" style="-webkit-overflow-scrolling: touch !important; overflow-y: scroll !important;">-->
+<!--            <h3 class="text-center text-white"> Fill in the form below</h3>-->
+<!--            --><?php //echo do_shortcode('[gravityform id="1" title="false" description="false" ajax="true"]');?>
+<!--        </div>-->
+<!--    </div>-->
 
     <script>
         hbspt.forms.create({
             portalId: "3948946",
-            formId: "a6425d5f-b1cb-4da1-8387-824fe1e3ad3a",
+            formId: "696d88cf-b0af-49c6-a40b-090317f5c138",
             onFormReady(){
                 var iframes = window.document.getElementsByTagName('iframe');
                 var iframeLength = iframes.length;
@@ -22,13 +29,26 @@
                         .attr('maxlength',5);
 
                     hubspotForm.find('input[name=phone]')
-                        .attr('maxlength',10);
-                    hubspotForm.find('input').on('keyup', function(){
+                        .attr('maxlength',14);
+                    hubspotForm.find('input[name=phone]')
+                        .on('input',function () {
+                            if($(this).val().length === 10) {
+                                $(this).val(formatPhoneNumber($(this).val()));
+                            }
+                        });
+                    hubspotForm.find('input').on('input', function(){
                         $('#wp-hubspot-popup').detach();
                     });
+
+                    setTimeout(function () {
+                        $($(window.document.getElementsByTagName('iframe')[0].contentDocument).find('input')).val('');
+                        $($(window.document.getElementsByTagName('iframe')[0].contentDocument).find('input[type=submit]')).val('submit');
+                    },1000);
                 }
 
             }
         });
+
+
     </script>
 </div>
