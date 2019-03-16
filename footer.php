@@ -26,7 +26,7 @@
                         <ul>
                             <li><a href="https://www.facebook.com/americanadvocacy/"><img src="<?php bloginfo(template_url);?>/images/facebook.png"></a></li>
                             <li><a href="https://www.instagram.com/americanadvocacygroup/"><img src="<?php bloginfo(template_url);?>/images/ins.png"></a></li>
-                            <li><a href="#"><img src="<?php bloginfo(template_url);?>/images/twitter.png"></a></li>
+                            <li><a href="https://www.twitter.com/AAdvocacyGroup"><img src="<?php bloginfo(template_url);?>/images/twitter.png"></a></li>
                         </ul>
 
                         <div class="follow">Follow us</div>

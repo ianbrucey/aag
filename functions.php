@@ -17,7 +17,7 @@ function aag_script_enqueue() {
     wp_enqueue_script('include-bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js');
 
 //    wp_enqueue_script('custom-js', get_template_directory_uri() . '/js/aag.js', [], '1.0.0', 'all');
-    wp_enqueue_style('custom-style', get_template_directory_uri() . '/css/main.css', [], '1.0.0', 'all');
+    wp_enqueue_style('custom-style', get_template_directory_uri() . '/css/main.css', [], '1.0.1', 'all');
 
 }
 
