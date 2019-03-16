@@ -34,7 +34,7 @@ $isBlogPage = !is_front_page() && is_home();
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> style="font-family: 'Raleway', Arial, sans-serif !important" >
 <?php get_template_part('hubspot-modal'); ?>
 <!-- BEGIN #wrapper -->
 <div id="wrapper">

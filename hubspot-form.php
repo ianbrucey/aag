@@ -33,6 +33,10 @@
                         $('#wp-hubspot-popup').detach();
                     });
 
+                    $(".go-to-eval-form").click(function (){
+                        $($(window.document.getElementsByTagName('iframe')[0].contentDocument).find('input[name=email]')).focus();
+                    });
+
                     setTimeout(function () {
                         $($(window.document.getElementsByTagName('iframe')[0].contentDocument).find('input')).val('');
                         $($(window.document.getElementsByTagName('iframe')[0].contentDocument).find('input[type=submit]')).val('submit');

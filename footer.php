@@ -60,7 +60,7 @@
             if($('#wp-hubspot-popup').length > 0){
                 $('#wp-hubspot-popup').modal('show');
             }
-        }, 1000);
+        }, 15000);
     };
 
 
