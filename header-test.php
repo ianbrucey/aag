@@ -31,10 +31,11 @@ $isBlogPage = !is_front_page() && is_home();
     <!--    <link rel="stylesheet" href="http://localhost:8888/wp-content/themes/givingpress-lite/css/main.css">-->
 
     <?php wp_head(); ?>
+
 </head>
 
-<body <?php body_class(); ?> style="font-family: 'Raleway', Arial, sans-serif !important" >
-<?php get_template_part('hubspot-modal'); ?>
+<body <?php body_class(); ?>>
+<?php get_template_part('test-hubspot-popup'); ?>
 <!-- BEGIN #wrapper -->
 <div id="wrapper">
 

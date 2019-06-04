@@ -26,7 +26,7 @@
                         <ul>
                             <li><a href="https://www.facebook.com/americanadvocacy/"><img src="<?php bloginfo(template_url);?>/images/facebook.png"></a></li>
                             <li><a href="https://www.instagram.com/americanadvocacygroup/"><img src="<?php bloginfo(template_url);?>/images/ins.png"></a></li>
-                            <li><a href="https://www.twitter.com/AAdvocacyGroup"><img src="<?php bloginfo(template_url);?>/images/twitter.png"></a></li>
+                            <li><a href="#"><img src="<?php bloginfo(template_url);?>/images/twitter.png"></a></li>
                         </ul>
 
                         <div class="follow">Follow us</div>
@@ -60,9 +60,18 @@
             if($('#wp-hubspot-popup').length > 0){
                 $('#wp-hubspot-popup').modal('show');
             }
-        }, 15000);
+        }, 1000);
     };
 
+    $('.modal').on('shown.bs.modal', function (e) {
+        $('html').addClass('freezePage');
+        $('body').addClass('freezePage');
+    });
+    $('.modal').on('hidden.bs.modal', function (e) {
+        $('html').removeClass('freezePage');
+        $('body').removeClass('freezePage');
+
+    });
 
     $('.go-to-eval-form').on('click', function () {
         {
@@ -90,16 +99,8 @@
         });
 
     });
-
-    function formatPhoneNumber(phoneNumberString) {
-        var cleaned = ('' + phoneNumberString).replace(/\D/g, '')
-        var match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/)
-        if (match) {
-            return '(' + match[1] + ') ' + match[2] + '-' + match[3]
-        }
-        return null
-    }
 </script>
+
 
 </body>
 </html>

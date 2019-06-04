@@ -11,7 +11,7 @@
         hbspt.forms.create({
             portalId: "3948946",
             formId: "a6425d5f-b1cb-4da1-8387-824fe1e3ad3a",
-            onFormReady(){
+            onFormReady: function(){
                 var iframes = window.document.getElementsByTagName('iframe');
                 var iframeLength = iframes.length;
                 for(var i = 0; i < iframeLength; i++) {
